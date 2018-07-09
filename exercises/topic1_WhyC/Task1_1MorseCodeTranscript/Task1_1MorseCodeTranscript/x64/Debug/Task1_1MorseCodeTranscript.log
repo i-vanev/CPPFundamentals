@@ -1,4 +1,22 @@
-﻿  Task1_1MorseCodeTranscript.cpp
-c:\users\ivan\documents\visual studio 2015\projects\task1_1morsecodetranscript\task1_1morsecodetranscript\task1_1morsecodetranscript.cpp(74): warning C4101: 'j': unreferenced local variable
-  Task1_1MorseCodeTranscript.vcxproj -> c:\users\ivan\documents\visual studio 2015\Projects\Task1_1MorseCodeTranscript\x64\Debug\Task1_1MorseCodeTranscript.exe
-  Task1_1MorseCodeTranscript.vcxproj -> c:\users\ivan\documents\visual studio 2015\Projects\Task1_1MorseCodeTranscript\x64\Debug\Task1_1MorseCodeTranscript.pdb (Full PDB)
+﻿Build started 9.7.2018 г. 8:55:24.
+     1>Project "F:\exercises\CPPFundamentals\CPPFundamentals\exercises\topic1_WhyC\Task1_1MorseCodeTranscript\Task1_1MorseCodeTranscript\Task1_1MorseCodeTranscript.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Debug\Task1_1M.A3796029.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Debug\Task1_1MorseCodeTranscript.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt Task1_1MorseCodeTranscript.cpp
+         Task1_1MorseCodeTranscript.cpp
+     1>f:\exercises\cppfundamentals\cppfundamentals\exercises\topic1_whyc\task1_1morsecodetranscript\task1_1morsecodetranscript\task1_1morsecodetranscript.cpp(74): warning C4101: 'j': unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\exercises\CPPFundamentals\CPPFundamentals\exercises\topic1_WhyC\Task1_1MorseCodeTranscript\x64\Debug\Task1_1MorseCodeTranscript.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\exercises\CPPFundamentals\CPPFundamentals\exercises\topic1_WhyC\Task1_1MorseCodeTranscript\x64\Debug\Task1_1MorseCodeTranscript.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\exercises\CPPFundamentals\CPPFundamentals\exercises\topic1_WhyC\Task1_1MorseCodeTranscript\x64\Debug\Task1_1MorseCodeTranscript.lib" /MACHINE:X64 x64\Debug\stdafx.obj
+         x64\Debug\Task1_1MorseCodeTranscript.obj
+         Task1_1MorseCodeTranscript.vcxproj -> F:\exercises\CPPFundamentals\CPPFundamentals\exercises\topic1_WhyC\Task1_1MorseCodeTranscript\x64\Debug\Task1_1MorseCodeTranscript.exe
+         Task1_1MorseCodeTranscript.vcxproj -> F:\exercises\CPPFundamentals\CPPFundamentals\exercises\topic1_WhyC\Task1_1MorseCodeTranscript\x64\Debug\Task1_1MorseCodeTranscript.pdb (Full PDB)
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\Task1_1M.A3796029.tlog\unsuccessfulbuild".
+         Touching "x64\Debug\Task1_1M.A3796029.tlog\Task1_1MorseCodeTranscript.lastbuildstate".
+     1>Done Building Project "F:\exercises\CPPFundamentals\CPPFundamentals\exercises\topic1_WhyC\Task1_1MorseCodeTranscript\Task1_1MorseCodeTranscript\Task1_1MorseCodeTranscript.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.03

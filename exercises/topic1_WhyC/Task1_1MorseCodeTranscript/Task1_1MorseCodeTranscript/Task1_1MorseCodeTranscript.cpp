@@ -72,7 +72,7 @@ char* EnglishToMorse(std::string latinText) {
 	int i = 0;
 	char currentLetter;
 	int j;
-	while (i != '\0')
+	while (latinText[i] != '\0')
 	{
 		currentLetter = latinText[i];
 		//TODO: use switch statement instead and define a locale
@@ -83,6 +83,7 @@ char* EnglishToMorse(std::string latinText) {
 			{
 				if (latinCharacters[j] == toupper(currentLetter)) {
 					output += morseCodeCharacters[j];
+					continue;
 				}
 			}
 			output += wsBetweenLetters;
@@ -91,8 +92,8 @@ char* EnglishToMorse(std::string latinText) {
 		}
 
 		//Don't forget the dash!
-
 		//We ignore all other characters for now
+
 		i++;
 	}
 
@@ -104,7 +105,7 @@ char* EnglishToMorse(std::string latinText) {
 
 int main(int argc, char **argv)
 {
-	std::cout<<EnglishToMorse("Holla");
+	std::cout<<EnglishToMorse("Hello world");
 	system("pause");
 	return 0;
 };
