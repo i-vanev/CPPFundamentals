@@ -1,0 +1,270 @@
+﻿Build started 18.7.2018 г. 11:46:46.
+     1>Project "C:\Users\John\Documents\Visual Studio 2015\Projects\CustomAllocatorDLL\TmpStringer\TmpStringer.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Touching "x64\Debug\TmpStringer.tlog\unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\John\Documents\Visual Studio 2015\Projects\CustomAllocatorDLL\CustomAllocatorDLL" /AI"C:\Users\John\Documents\Visual Studio 2015\Projects\CustomAllocatorDLL\CustomAllocatorDLL\x64" /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Debug\TmpStringer.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt TmpStringer.cpp
+         TmpStringer.cpp
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(556): error C2039: 'value_type': is not a member of 'CustomAllocator::LinearAllocator'
+         c:\users\john\documents\visual studio 2015\projects\customallocatordll\customallocatordll\linearallocator.h(8): note: see declaration of 'CustomAllocator::LinearAllocator'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(887): note: see reference to class template instantiation 'std::allocator_traits<_Alloc>' being compiled
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(460): note: see reference to class template instantiation 'std::_Wrap_alloc<CustomAllocator::LinearAllocator>' being compiled
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(551): note: see reference to class template instantiation 'std::_String_base_types<_Elem,_Alloc>' being compiled
+                 with
+                 [
+                     _Elem=char,
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(752): note: see reference to class template instantiation 'std::_String_alloc<std::_String_base_types<_Elem,_Alloc>>' being compiled
+                 with
+                 [
+                     _Elem=char,
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\users\john\documents\visual studio 2015\projects\customallocatordll\tmpstringer\tmpstringer.cpp(10): note: see reference to class template instantiation 'std::basic_string<char,std::char_traits<char>,CustomAllocator::LinearAllocator>' being compiled
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(556): error C3646: 'value_type': unknown override specifier
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(556): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(315): error C2146: syntax error: missing '>' before identifier 'value_type'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(558): note: see reference to class template instantiation 'std::_Get_pointer_type<_Alloc>' being compiled
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(315): error C2672: 'std::_Get_pointer_type<_Alloc>::_Fn': no matching overloaded function found
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(315): error C2893: Failed to specialize function template 'std::_Identity<int> std::_Get_pointer_type<_Alloc>::_Fn(std::_Wrap_int)'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(315): note: With the following template arguments:
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(315): note: '_Uty=CustomAllocator::LinearAllocator'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(315): error C2770: invalid explicit template argument(s) for 'std::_Identity<_Uty::pointer> std::_Get_pointer_type<_Alloc>::_Fn(int)'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(315): note: see declaration of 'std::_Get_pointer_type<_Alloc>::_Fn'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(322): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(560): note: see reference to class template instantiation 'std::_Get_const_pointer_type<_Alloc>' being compiled
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(322): error C2146: syntax error: missing '>' before identifier 'value_type'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(322): error C2672: 'std::_Get_const_pointer_type<_Alloc>::_Fn': no matching overloaded function found
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(322): error C2770: invalid explicit template argument(s) for 'std::_Identity<pointer_traits<_Get_pointer_type<_Alloc>::_Decltype::type>::rebind<const int>> std::_Get_const_pointer_type<_Alloc>::_Fn(std::_Wrap_int)'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(322): note: see declaration of 'std::_Get_const_pointer_type<_Alloc>::_Fn'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(322): error C2770: invalid explicit template argument(s) for 'std::_Identity<_Uty::const_pointer> std::_Get_const_pointer_type<_Alloc>::_Fn(int)'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(322): note: see declaration of 'std::_Get_const_pointer_type<_Alloc>::_Fn'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(329): error C2672: 'std::_Get_void_pointer_type<_Alloc>::_Fn': no matching overloaded function found
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(562): note: see reference to class template instantiation 'std::_Get_void_pointer_type<_Alloc>' being compiled
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(329): error C2770: invalid explicit template argument(s) for 'std::_Identity<pointer_traits<_Get_pointer_type<_Alloc>::_Decltype::type>::rebind<void>> std::_Get_void_pointer_type<_Alloc>::_Fn(std::_Wrap_int)'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(329): note: see declaration of 'std::_Get_void_pointer_type<_Alloc>::_Fn'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(329): error C2770: invalid explicit template argument(s) for 'std::_Identity<_Uty::void_pointer> std::_Get_void_pointer_type<_Alloc>::_Fn(int)'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(329): note: see declaration of 'std::_Get_void_pointer_type<_Alloc>::_Fn'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(336): error C2672: 'std::_Get_const_void_pointer_type<_Alloc>::_Fn': no matching overloaded function found
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(564): note: see reference to class template instantiation 'std::_Get_const_void_pointer_type<_Alloc>' being compiled
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(336): error C2770: invalid explicit template argument(s) for 'std::_Identity<pointer_traits<_Get_pointer_type<_Alloc>::_Decltype::type>::rebind<const void>> std::_Get_const_void_pointer_type<_Alloc>::_Fn(std::_Wrap_int)'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(336): note: see declaration of 'std::_Get_const_void_pointer_type<_Alloc>::_Fn'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(336): error C2770: invalid explicit template argument(s) for 'std::_Identity<_Uty::const_void_pointer> std::_Get_const_void_pointer_type<_Alloc>::_Fn(int)'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(336): note: see declaration of 'std::_Get_const_void_pointer_type<_Alloc>::_Fn'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(343): error C2672: 'std::_Get_difference_type<_Ty>::_Fn': no matching overloaded function found
+                 with
+                 [
+                     _Ty=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(350): note: see reference to class template instantiation 'std::_Get_difference_type<_Ty>' being compiled
+                 with
+                 [
+                     _Ty=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(567): note: see reference to class template instantiation 'std::_Get_size_type<_Alloc>' being compiled
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(343): error C2770: invalid explicit template argument(s) for 'std::_Identity<_Get_ptr_difference_type<_Get_pointer_type<_Alloc>::_Decltype::type>::type> std::_Get_difference_type<_Ty>::_Fn(std::_Wrap_int)'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator,
+                     _Ty=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(343): note: see declaration of 'std::_Get_difference_type<_Ty>::_Fn'
+                 with
+                 [
+                     _Ty=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(343): error C2770: invalid explicit template argument(s) for 'std::_Identity<_Uty::difference_type> std::_Get_difference_type<_Ty>::_Fn(int)'
+                 with
+                 [
+                     _Ty=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(343): note: see declaration of 'std::_Get_difference_type<_Ty>::_Fn'
+                 with
+                 [
+                     _Ty=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(350): error C2672: 'std::_Get_size_type<_Alloc>::_Fn': no matching overloaded function found
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(350): error C2770: invalid explicit template argument(s) for 'std::_Identity<make_unsigned<_Get_difference_type<_Ty>::_Decltype::type>::type> std::_Get_size_type<_Ty>::_Fn(std::_Wrap_int)'
+                 with
+                 [
+                     _Ty=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(350): note: see declaration of 'std::_Get_size_type<_Alloc>::_Fn'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(350): error C2770: invalid explicit template argument(s) for 'std::_Identity<_Uty::size_type> std::_Get_size_type<_Alloc>::_Fn(int)'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(350): note: see declaration of 'std::_Get_size_type<_Alloc>::_Fn'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(586): warning C4494: 'std::allocator_traits<_Alloc>::allocate' : Ignoring __declspec(allocator) because the function return type is not a pointer or reference
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(592): warning C4494: 'std::allocator_traits<_Alloc>::allocate' : Ignoring __declspec(allocator) because the function return type is not a pointer or reference
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(975): warning C4494: 'std::_Wrap_alloc<CustomAllocator::LinearAllocator>::allocate' : Ignoring __declspec(allocator) because the function return type is not a pointer or reference
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(981): warning C4494: 'std::_Wrap_alloc<CustomAllocator::LinearAllocator>::allocate' : Ignoring __declspec(allocator) because the function return type is not a pointer or reference
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(240): error C2672: 'std::_Get_rebind_type<_Alloc,_Other>::_Fn': no matching overloaded function found
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator,
+                     _Other=char
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(919): note: see reference to class template instantiation 'std::_Get_rebind_type<_Alloc,_Other>' being compiled
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator,
+                     _Other=char
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(460): note: see reference to class template instantiation 'std::_Wrap_alloc<CustomAllocator::LinearAllocator>::rebind<_Ty>' being compiled
+                 with
+                 [
+                     _Ty=char
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(240): error C2770: invalid explicit template argument(s) for 'std::_Identity<_Replace_first_parameter<_Other,_Uty>::type> std::_Get_rebind_type<_Alloc,_Other>::_Fn(std::_Wrap_int)'
+                 with
+                 [
+                     _Other=char,
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(240): note: see declaration of 'std::_Get_rebind_type<_Alloc,_Other>::_Fn'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator,
+                     _Other=char
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(240): error C2770: invalid explicit template argument(s) for 'std::_Identity<_Uty::rebind<_Other>::other> std::_Get_rebind_type<_Alloc,_Other>::_Fn(int)'
+                 with
+                 [
+                     _Other=char,
+                     _Alloc=CustomAllocator::LinearAllocator
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(240): note: see declaration of 'std::_Get_rebind_type<_Alloc,_Other>::_Fn'
+                 with
+                 [
+                     _Alloc=CustomAllocator::LinearAllocator,
+                     _Other=char
+                 ]
+     1>Done Building Project "C:\Users\John\Documents\Visual Studio 2015\Projects\CustomAllocatorDLL\TmpStringer\TmpStringer.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.55
